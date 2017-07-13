@@ -5,7 +5,7 @@ describe "User edits an existing job" do
     job = create(:job)
 
     visit edit_company_job_path(job.company, job)
-# save_and_open_page
+
     fill_in "job[title]", with: "Muck Raker"
     click_button "Update"
 
