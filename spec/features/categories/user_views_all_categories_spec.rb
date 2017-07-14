@@ -6,7 +6,7 @@ describe "User sees all categories" do
 # byebug
     visit categories_path
 
-    expect(page).to have_content("Category1")
+    expect(page).to have_content("Marketing3")
     # find_link('Edit')[:href].should == "categories/#{category[1].id}"
     expect(page).to have_link('Edit')#, href: "/categories/#{category[0].id}")
     expect(page).to have_link('Delete')
