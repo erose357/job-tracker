@@ -6,7 +6,7 @@ describe "User sees one company" do
 
     visit company_path(company)
 
-    expect(current_path).to eq("/companies/#{company.id}/jobs")
+    expect(current_path).to eq("/companies/#{company.id}")
     expect(page).to have_content(company.name)
     expect(page).to have_content(company.jobs[0].title)
   end
