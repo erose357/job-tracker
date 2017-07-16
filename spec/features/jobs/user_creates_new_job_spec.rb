@@ -14,7 +14,7 @@ describe "User creates a new job" do
     page.select 'Tom Foolery', :from => "job[category_id]"
 
     click_button "Create"
-
+# byebug
     expect(current_path).to eq("/companies/#{company.id}/jobs/#{Job.last.id}")
     expect(page).to have_content("Vandelay Industries")
     expect(page).to have_content("Developer")
